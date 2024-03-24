@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bgimg {
+  background-image: url(./images/background.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-weight: 600;
+  color: white;
+}
+
+.logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coming_soon--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.coming_soon--text {
+  font-size: 3rem;
+}
+
+#input {
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  opacity: 70%;
+  width: 20rem;
+  height: 2rem;
+}
+
+#myBtn {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+button {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 2rem;
+  color: white;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.email--container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input--container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input--alert {
+  font-size: 0.75rem;
+  color: white;
+  height: 1rem;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  margin-right: 5rem;
+}
+
+.link {
+  width: 2rem;
+  height: 2rem;
+}
+
+.link--container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.show--text {
+  opacity: 1;
+}
+
+.invalid {
+  color: red;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  width: 70vw;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content p {
+  font-weight: 500;
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Phone Responsive Styles */
+@media (max-width: 480px) {
+  body {
+    position: relative;
+  }
+
+  .email--container {
+    width: 80%;
+  }
+
+  .input--container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #input,
+  #myBtn {
+    width: 100%;
+  }
+
+  .logo--container {
+    padding-top: 2rem;
+  }
+
+  .coming_soon--text {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .link--container {
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 70vw;
+  }
+
+  .input--alert {
+    margin: 0;
+  }
+}

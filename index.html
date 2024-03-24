@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Coming soon</title>
+  </head>
+  <body>
+    <div class="bgimg">
+      <div class="container">
+        <header class="logo--container">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+          <span class="text">Lorem ipsum dolor sit amet.</span>
+        </header>
+
+        <main>
+          <div class="coming_soon--container">
+            <p class="text coming_soon--text">Coming Soon Page</p>
+            <p class="text">Get ready! Something really cool is coming!</p>
+          </div>
+
+          <div class="email--container">
+            <span class="input--alert"></span>
+            <form class="input--container" onsubmit="handleSubmit(event)">
+              <input
+                id="input"
+                name="input"
+                type="text"
+                placeholder="Enter Your Email"
+                onkeyup="changeInputText()"
+              />
+              <button id="myBtn" type="submit">Notify Me</button>
+            </form>
+          </div>
+        </main>
+
+        <footer class="link--container">
+          <a href="https://facebook.com" target="_blank">
+            <img class="link" src="./images/facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img class="link" src="./images/twitter.svg" alt="twitter" />
+          </a>
+          <a href="https://gmail.com" target="_blank">
+            <img class="link" src="./images/email.svg" alt="gmail" />
+          </a>
+        </footer>
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <p>Thanks for Submit!</p>
+            <span id="close">&times;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
